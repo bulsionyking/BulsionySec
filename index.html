@@ -25,6 +25,7 @@ A small standalone Bash program that outputs a JSON-like system configuration an
 License: Proprietary — Copyright © BulsionySec™ SP
 -->
 
+<script>
 const CACHE_NAME = 'cool-cache';
 
 // Add whichever assets you want to pre-cache here:
@@ -40,6 +41,7 @@ self.addEventListener('install', event => {
         cache.addAll(PRECACHE_ASSETS);
     })());
 });
+</script>
 
 
 <!doctype html>
