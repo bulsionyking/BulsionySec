@@ -1,12 +1,17 @@
 {
-  "name": "BulsionySec Fortify",
-  "short_name": "BulsionySec",
-  "description": "A Fortified Bash Security Program",
+  "name": "BulsionySec",
+  "short_name": "Bulsiony",
   "start_url": "/index.html",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "orientation": "portrait",
-  "scope": "/",
-  "id": "Bulsiony"
+  "icons": [
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
