@@ -235,7 +235,7 @@ echo "Successfully Fortified!"
     window._fortifyConfig = {raw, cfg, parsed};
 
     // Populate README and json preview placeholders
-    document.getElementById('readmeBlock').textContent = `README.md included in this file.\n\nRun the script locally: chmod +x fortify.sh && ./fortify.sh`;
+    document.getElementById('readmeBlock').textContent = `README.md included in this file.\n\nRun the script locally: chmod +x fortify.sh ./fortify.sh`;
     document.getElementById('jsonBlock').textContent = JSON.stringify(parsed, null, 4);
 
   })();
