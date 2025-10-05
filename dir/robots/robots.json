@@ -1,11 +1,11 @@
 {
   "site": {
-    "name": "BulsionSec™ Fortify",
+    "name": "BulsionSec™ Fortify - Viewer",
     "domain": "https://bulsionyking.github.io/bulsionysec/",
-    "directory": "/sir/",
+    "directory": "/index.html",
     "author": "bulsionyking",
     "organization": "BulsionySec™ SP",
-    "copyright": "© 2025 BulsionySec™ SP. © All Rights Reserved."
+    "copyright": "BulsionySec™ SP. © All Rights Reserved."
   },
   "visitPolicy": {
     "firstDayVisit": {
