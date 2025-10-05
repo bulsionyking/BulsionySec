@@ -10,4 +10,7 @@
   "theme_color": "#ffffff",
   "id": "Bulsiony",
   "description": "A Fortified Bash Security Program"
+},
+{
+  "icons": "icon-522x512.png"
 }
