@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "BulsionySec Fortify",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "BulsionySec",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "id": "Bulsiony",
+  "description": "A Fortified Bash Security Program"
+}
