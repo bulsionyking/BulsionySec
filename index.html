@@ -25,21 +25,42 @@ A small standalone Bash program that outputs a JSON-like system configuration an
 License: Proprietary — Copyright © BulsionySec™ SP
 -->
 
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#ffffff">
+
 <script>
 const CACHE_NAME = 'cool-cache';
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(reg => console.log("Service Worker registered.", reg))
+    .catch(err => console.error("Service Worker registration failed:", err));
+}
+</script>
 
-// Add whichever assets you want to pre-cache here:
-const PRECACHE_ASSETS = [
-    '/assets/',
-    '/src/'
-]
+<script>
+    let deferredPrompt;
 
-// Listener for the install event - pre-caches our assets list on service worker install.
-self.addEventListener('install', event => {
-    event.waitUntil((async () => {
-        const cache = await caches.open(CACHE_NAME);
-        cache.addAll(PRECACHE_ASSETS);
-    })());
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+
+  // Show your custom install button
+  const installButton = document.getElementById('installBtn');
+  installButton.style.display = 'block';
+
+  installButton.addEventListener('click', () => {
+    installButton.style.display = 'none';
+    deferredPrompt.prompt();
+
+    deferredPrompt.userChoice.then(choiceResult => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the install prompt');
+      } else {
+        console.log('User dismissed the install prompt');
+      }
+      deferredPrompt = null;
+    });
+  });
 });
 </script>
 
