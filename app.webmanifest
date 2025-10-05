@@ -1,9 +1,9 @@
 {
   "background_color": "#ffffff",
-  "dir": "ltr",
-  "display": "standalone",
+  "dir": "/root",
+  "type:" "standalone",
   "name": "BulsionySec Fortify",
-  "orientation": "any",
+  "orientation": "portrait",
   "scope": "/",
   "short_name": "BulsionySec",
   "start_url": "/",
