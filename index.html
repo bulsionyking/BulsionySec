@@ -30,11 +30,14 @@ License: Proprietary — Copyright © BulsionySec™ SP
 <meta name="theme-color" content="#ffffff">
 
 <script>
-const CACHE_NAME = 'cool-cache';
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
-    .then(reg => console.log("Service Worker registered.", reg))
-    .catch(err => console.error("Service Worker registration failed:", err));
+  navigator.serviceWorker.register('/.SE')
+    .then((registration) => {
+      console.log('Service Worker registered with scope:', registration.scope);
+    })
+    .catch((error) => {
+      console.error('Service Worker registration failed:', error);
+    });
 }
 </script>
 
