@@ -6,7 +6,7 @@
   "orientation": "portrait",
   "scope": "/",
   "short_name": "BulsionySec",
-  "start_url": "/",
+  "start_url": "/index.html",
   "theme_color": "#ffffff",
   "id": "Bulsiony",
   "description": "A Fortified Bash Security Program"
