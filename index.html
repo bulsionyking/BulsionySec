@@ -25,6 +25,23 @@ A small standalone Bash program that outputs a JSON-like system configuration an
 License: Proprietary — Copyright © BulsionySec™ SP
 -->
 
+const CACHE_NAME = 'cool-cache';
+
+// Add whichever assets you want to pre-cache here:
+const PRECACHE_ASSETS = [
+    '/assets/',
+    '/src/'
+]
+
+// Listener for the install event - pre-caches our assets list on service worker install.
+self.addEventListener('install', event => {
+    event.waitUntil((async () => {
+        const cache = await caches.open(CACHE_NAME);
+        cache.addAll(PRECACHE_ASSETS);
+    })());
+});
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -37,6 +54,8 @@ License: Proprietary — Copyright © BulsionySec™ SP
   <link rel="preload" href="/styles.css" as="style">
   <link rel="preload" href="/script.js" as="script">
 
+
+  
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:20px;background:#f7fafc;color:#0f172a}
     .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.08);max-width:980px;margin:12px auto}
