@@ -25,9 +25,10 @@ A small standalone Bash program that outputs a JSON-like system configuration an
 License: Proprietary — Copyright © BulsionySec™ SP
 -->
 
- <link rel="icon" sizes="512x512" href=icon-512x512.png">
-<link rel="manifest" href="/app.webmanifest">
-<link rel="alternate" type="application/json" href="/dir/robots/robots.json">
+ <link rel="icon" sizes="512x512" href="./icon-512x512.png">
+<link rel="manifest" href="./app.webmanifest">
+<link rel="serviceworker=" href="./sw">
+<link rel="alternate" type="application/json" href="./dir/robots/robots.json">
 <meta name="theme-color" content="#ffffff">
 
 <script>
@@ -122,7 +123,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   </div>
 
   <!-- Embedded configuration: this simulates "preload" data that the inline script will read immediately. -->
-  <script id="embedded-bash" type="text/plain">
+  <script id="embedded-bash" type="appplication/bash">
 #!/usr/bin/env bash
 # Standalone executable Bash program based on provided device configuration.
 # Copyright © BulsionySec™ SP
@@ -208,7 +209,7 @@ echo "Successfully Fortified!"
   </script>
 
   <!-- Inline preload-style script: reads the embedded script early and parses variables -->
-  <script>
+  <script type="text/javascript">
   // Preload-style initialization: run immediately to populate UI fast
   (function preload(){
     const raw = document.getElementById('embedded-bash').textContent;
@@ -246,7 +247,7 @@ echo "Successfully Fortified!"
   </script>
 
   <!-- Inline utility script: copy & download actions. Kept small and inline for single-file delivery. -->
-  <script>
+  <script type="text/javascript">
   (function(){
     const copyBtn=document.getElementById('copyBtn');
     const downloadBtn=document.getElementById('downloadBtn');
