@@ -29,11 +29,12 @@ A small standalone Bash program that outputs a JSON-like system configuration an
 License: Proprietary — Copyright © BulsionySec™ SP
 -->
 
- <meta name="apllicatiom-name" value="BulsionySec">
+ <meta name="aplicatiom-name" value="BulsionySec">
   <link rel="icon" sizes="512x512" href="./icon-512x512.png">
 <link rel="manifest" href="./app.webmanifest">
 <link rel="serviceworker=" href="./sw">
-<link rel="alternate" type="application/json" href="./dir/robots/robots.json">
+<link rel="preload" as="fetch" type="application/json" href="./dir/robots/robots.json">
+<link rel="preload" as="script" type="application/bash" href="Bash/usr/env/fortify.sh">
 <meta name="theme-color" content="#ffffff">
 
 <script type="text/javascript">
