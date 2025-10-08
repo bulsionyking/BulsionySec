@@ -1,7 +1,12 @@
+// =============================
+// PyDonSec™ System Definition
+// Configuration File (.pydl)
+// =============================
+
 // Device configuration
 device:
     macAddress > "00:00:00:00:00:00"
-    btAddress > "00:00:00:00:00:00"
+    btAddress  > "00:00:00:00:00:00"
 
 // IP configuration
 ipAddress:
@@ -10,8 +15,8 @@ ipAddress:
 
 // Firewall rules
 firewallRule:
-    deny > true
-    port > 0
+    deny     > true
+    port     > 0
     protocol > "ALL"
 
 // Telemetry settings
@@ -19,17 +24,19 @@ telemetry:
     enabled > false
 
 // Hostname configuration
-hostname > "localhost"
+hostname > "127.0.0.1"
 
 // DNS configuration
 dns:
-    primary > "127.0.0.1"
+    primary   > "127.0.0.1"
     secondary > "::1"
 
 // Encryption settings
 encryption:
     method > "AES-256"
     enable > true
+    hash   > "MD5"
+    keygen > "auto"
 
 // Traceroute blocking
 traceroute:
@@ -38,3 +45,11 @@ traceroute:
 // Fingerprinting settings
 fingerprinting:
     obfuscate > true
+
+// Metadata and signature
+meta:
+    product > "PyDonSec™ SP"
+    version > "2.0"
+    license > "auto"
+    author  > "Sir. Code"
+    copyright > "© PyDonSec™"
