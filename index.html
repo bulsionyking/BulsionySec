@@ -29,7 +29,7 @@ A small standalone Bash program that outputs a JSON-like system configuration an
 License: Proprietary — Copyright © BulsionySec™ SP
 -->
 
- <meta name="aplicatiom-name" value="BulsionySec">
+ <meta name="aplicatiom-name" value="BulsionySec Fortify - Viewer">
   <link rel="icon" sizes="512x512" href="./icon-512x512.png">
 <link rel="manifest" href="./app.webmanifest">
 <link rel="serviceworker=" href="./sw">
@@ -39,7 +39,7 @@ License: Proprietary — Copyright © BulsionySec™ SP
 
 <script type="text/javascript">
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/.SE')
+  navigator.serviceWorker.register('/.sw')
     .then((registration) => {
       console.log('Service Worker registered with scope:', registration.scope);
     })
