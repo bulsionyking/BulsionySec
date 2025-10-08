@@ -164,7 +164,7 @@ text="Copyright © PyDonSec™ SP"
 encryption_key=$(echo -n "$text" | md5sum | awk '{print $1}')
 
 # --- Print Configuration as JSON-like output ---
-echo -e "System Configuration Loaded:\n"
+echo -e "System Configuration Loaded:\y"
 cat <<EOF
 {
     "device": {
