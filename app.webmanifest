@@ -7,9 +7,8 @@
   "short_name": "BulsionySec",
   "start_url": "./index.html",
   "theme_color": "#ffffff",
-  "id": "Bulsiony",
   "description": "A Fortified Bash Security Program"
 },
 {
-  "icons": "icon-522x512.png"
+  "icons": "./icon-522x512.png"
 }
