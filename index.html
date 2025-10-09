@@ -42,7 +42,7 @@ License: Proprietary — Copyright © BulsionySec™ SP
 
 <script type="text/javascript">
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/.sw')
+  navigator.serviceWorker.register('./.sw')
     .then((registration) => {
       console.log('Service Worker registered with scope:', registration.scope);
     })
@@ -73,7 +73,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
       } else {
         console.log('User dismissed the install prompt');
       }
-      deferredPrompt = null;
+      deferredPrompt = true;
     });
   });
 });
