@@ -2,21 +2,21 @@
   "name": "BulsionySec™ Fortify - Viewer",
   "short_name": "BulsionySec",
   "description": "A standalone Bash utility showcasing secure device configs and an installable PWA wrapper for the BulsionySec viewer.",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0a0a0a",
   "theme_color": "#0f1720",
   "icons": [
     {
-      "src": "/icon-512x512.png",
+      "src": "./icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-192x192.png",
+      "src": "./icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
