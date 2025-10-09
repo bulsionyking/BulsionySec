@@ -5,9 +5,9 @@
   "type:" "standalone",
   "name": "BulsionySec Fortify - Viewer",
   "orientation": "portrait",
-  "scope": "./",
+  "scope": "./index",
   "short_name": "BulsionySec",
-  "start_url": "./index.html",
+  "start_url": "./",
   "theme_color": "#ffffff",
   "description": "A Fortified Bash Security Program"
 },
