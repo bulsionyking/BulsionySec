@@ -3,7 +3,7 @@ const PRECACHE_ASSETS = [
   './',
   './index.html',
   './styles.css',
-  "./app.webmanifest',
+  './app.webmanifest',
   './icon-512x512.png',
   './icon-192x192.png'
 ];
