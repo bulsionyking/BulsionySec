@@ -1,3 +1,5 @@
+!Webmanifest /dir/app/env webmanifest
+
 {
   "background_color": "#ffffff",
   "type:" "standalone",
